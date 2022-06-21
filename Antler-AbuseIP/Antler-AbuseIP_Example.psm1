@@ -20,7 +20,7 @@ function Get-AntlerIP {
 
                 foreach ($I in $IPs){
 
-                  (Invoke-RestMethod "https://<Your_HOST>:300/abuse/$($I)").Data
+                  (Invoke-RestMethod "https://<Your_HOST>/abuse/$($I)").Data
 
 
                 }
